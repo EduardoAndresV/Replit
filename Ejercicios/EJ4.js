@@ -5,7 +5,7 @@ const repetirCadena = (cadena="",x) => {
   for (let i = 1 ; i<=x; i++){
     console.log(cadena)
   }
- 
+
 }
 
 repetirCadena('Hola Mundo', 3) 
