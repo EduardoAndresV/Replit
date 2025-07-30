@@ -1,11 +1,18 @@
-//Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+//  Programa una función que determine si un número es primo (aquel que solo es divisible por sí mismo y 1) o no, pe. miFuncion(7) devolverá true.
 
 
-const repetirCadena = (cadena="",x) => {
-  for (let i = 1 ; i<=x; i++){
-    console.log(cadena)
+const numeroPrimo = (n) =>{
+  let aux =0;
+  for (let i=2; i<=n ; i++){
+    if( n % i===0){
+      aux++;
+    }
   }
- 
+  if (aux === 1){
+    return true
+  }{
+    return false
+  }
 }
 
-repetirCadena('Hola Mundo', 3) 
+console.log(numeroPrimo(2))
